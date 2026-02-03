@@ -34,6 +34,13 @@
 # Visual Studio cache directory
 .vs/
 
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Ll]ogs/
+UserSettings/
+
+
 # Gradle cache directory
 .gradle/
 
