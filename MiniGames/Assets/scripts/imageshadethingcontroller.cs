@@ -21,6 +21,17 @@ public class imageshadethingcontroller : MonoBehaviour
         }
         whentimebegantherewasthecolor = foto.color;
     }
+
+    public void LowTaperFadeIn()
+    {
+        Startfade(whentimebegantherewasthecolor.a);
+    }
+
+    public void LowTaperFadeOut()
+    {
+        Startfade(0f);
+    }
+
     private IEnumerator FadeAschtonHall(float TargetAlphaomgfuckinalfasocrazyy)
     {
         float seconds = 0f;
@@ -50,15 +61,5 @@ public class imageshadethingcontroller : MonoBehaviour
         }
         coroutine = StartCoroutine(FadeAschtonHall(TargetAlphaomgfuckinalfasocrazyy));
     }
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
