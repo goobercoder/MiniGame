@@ -269,7 +269,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed9268707f2369b4c91cd7e4853497b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotationEffect
-  meatMult: 0.3
+  meatMultMult: 1
   angleMult: 70
 --- !u!1 &519420028
 GameObject:
@@ -510,7 +510,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &659041848
 RectTransform:
   m_ObjectHideFlags: 0
@@ -731,7 +731,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed9268707f2369b4c91cd7e4853497b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotationEffect
-  meatMult: 0.3
+  meatMultMult: 1
   angleMult: 70
 --- !u!1 &703218535
 GameObject:
@@ -831,8 +831,8 @@ RectTransform:
   m_Children:
   - {fileID: 1719306868}
   - {fileID: 904286828}
-  - {fileID: 697971354}
   - {fileID: 827713006}
+  - {fileID: 697971354}
   - {fileID: 301161283}
   - {fileID: 659041848}
   m_Father: {fileID: 1672226270}
@@ -906,7 +906,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 827713005}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1030,7 +1030,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed9268707f2369b4c91cd7e4853497b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotationEffect
-  meatMult: 0.3
+  meatMultMult: 1
   angleMult: 70
 --- !u!1 &904286827
 GameObject:
@@ -1182,7 +1182,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed9268707f2369b4c91cd7e4853497b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotationEffect
-  meatMult: 0.3
+  meatMultMult: 3
   angleMult: 70
 --- !u!1 &1672226269
 GameObject:
@@ -1266,7 +1266,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed9268707f2369b4c91cd7e4853497b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotationEffect
-  meatMult: 0.3
+  meatMultMult: 10
   angleMult: 70
 --- !u!114 &1719306870
 MonoBehaviour:
@@ -1395,6 +1395,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2087277925}
   - component: {fileID: 2087277924}
+  - component: {fileID: 2087277926}
   m_Layer: 0
   m_Name: BitchController
   m_TagString: Untagged
@@ -1430,6 +1431,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2087277926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2087277923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76613963a74412540bf9bb0d546847c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::sector
+  normalCocklor: {r: 1, g: 1, b: 1, a: 1}
+  erectCocklor: {r: 0.627451, g: 0.1254902, b: 0.9411765, a: 1}
+  consumptionary_button_products:
+  - {fileID: 301161284}
+  - {fileID: 827713007}
+  - {fileID: 697971355}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
