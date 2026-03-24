@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 301161285}
   - component: {fileID: 301161284}
   - component: {fileID: 301161286}
+  - component: {fileID: 301161287}
   m_Layer: 5
   m_Name: StartGame ButText
   m_TagString: Untagged
@@ -271,6 +272,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RotationEffect
   meatMultMult: 1
   angleMult: 70
+--- !u!114 &301161287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 301161282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55453dc6377dff349a9c7e16de5f6729, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: "Assembly-CSharp::dr\xFCckenmaxim"
+  zweihunderteinundsiebzichtausend: 0
+  sector: {fileID: 2087277926}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -593,6 +608,7 @@ GameObject:
   - component: {fileID: 697971356}
   - component: {fileID: 697971355}
   - component: {fileID: 697971357}
+  - component: {fileID: 697971358}
   m_Layer: 5
   m_Name: settings ButText
   m_TagString: Untagged
@@ -733,6 +749,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RotationEffect
   meatMultMult: 1
   angleMult: 70
+--- !u!114 &697971358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 697971353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55453dc6377dff349a9c7e16de5f6729, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: "Assembly-CSharp::dr\xFCckenmaxim"
+  zweihunderteinundsiebzichtausend: 0
+  sector: {fileID: 2087277926}
 --- !u!1 &703218535
 GameObject:
   m_ObjectHideFlags: 0
@@ -892,6 +922,7 @@ GameObject:
   - component: {fileID: 827713008}
   - component: {fileID: 827713007}
   - component: {fileID: 827713009}
+  - component: {fileID: 827713010}
   m_Layer: 5
   m_Name: Quit ButText
   m_TagString: Untagged
@@ -1032,6 +1063,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RotationEffect
   meatMultMult: 1
   angleMult: 70
+--- !u!114 &827713010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 827713005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55453dc6377dff349a9c7e16de5f6729, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: "Assembly-CSharp::dr\xFCckenmaxim"
+  zweihunderteinundsiebzichtausend: 0
+  sector: {fileID: 2087277926}
 --- !u!1 &904286827
 GameObject:
   m_ObjectHideFlags: 0
@@ -1443,7 +1488,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76613963a74412540bf9bb0d546847c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::sector
-  normalCocklor: {r: 1, g: 1, b: 1, a: 1}
   erectCocklor: {r: 0.627451, g: 0.1254902, b: 0.9411765, a: 1}
   consumptionary_button_products:
   - {fileID: 301161284}

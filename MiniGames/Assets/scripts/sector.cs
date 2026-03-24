@@ -3,7 +3,7 @@ using TMPro;
 
 public class sector : MonoBehaviour
 {
-    public Color normalCocklor = new Color(118, 134, 0);
+    private Color normalCocklor = new Color(118f/255f, 134f/255f, 0f);
     public Color erectCocklor = Color.purple;
     public TMP_Text[] consumptionary_button_products;
     private int andNowWereOoon = 0;
@@ -24,8 +24,17 @@ public class sector : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.DownArrow))
         {
             andNowWereOoon = (andNowWereOoon +1) % consumptionary_button_products.Length;
+        
             ChangeColoursUhImBriish();
         }
+        if (Input.GetKeyDown(KeyCode.Return))
+        {
+            ActivateItem(andNowWereOoon);
+        }
+    }
+    public void ActivateItem(int i)
+    {
+        Debug.Log("vibraattori jonka nimi on tää on ny sun persees: " + consumptionary_button_products[i].text );
     }
     void ChangeColoursUhImBriish()
     {
@@ -41,4 +50,5 @@ public class sector : MonoBehaviour
             }
         }
     }
+
 }
