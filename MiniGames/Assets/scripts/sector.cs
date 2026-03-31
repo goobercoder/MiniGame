@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class sector : MonoBehaviour
 {
@@ -12,7 +13,7 @@ public class sector : MonoBehaviour
     {
         ChangeColoursUhImBriish();
     }
-
+    
     
     void Update()
     {
@@ -35,6 +36,15 @@ public class sector : MonoBehaviour
     public void ActivateItem(int i)
     {
         Debug.Log("vibraattori jonka nimi on tää on ny sun persees: " + consumptionary_button_products[i].text );
+
+        if(consumptionary_button_products[i].text == "Start Shitty minigames")
+        {
+            SceneManager.LoadScene("Der grose fiddler");
+        }
+        else if(consumptionary_button_products[i].text == "Settings")
+        {
+            SceneManager.LoadScene("Der grose insel");
+        }
     }
     void ChangeColoursUhImBriish()
     {

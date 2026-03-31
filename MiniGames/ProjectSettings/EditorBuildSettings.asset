@@ -8,6 +8,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ACollectionOfButtons.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/Der grose insel.unity
+    guid: 6cef6ee5d476c754cbc0e9650128c9a6
+  - enabled: 1
+    path: Assets/Scenes/der grose fiddler.unity
+    guid: fa3f1a35549847849a0fb61ae73d1394
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
