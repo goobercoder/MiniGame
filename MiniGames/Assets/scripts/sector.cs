@@ -45,6 +45,11 @@ public class sector : MonoBehaviour
         {
             SceneManager.LoadScene("Der grose insel");
         }
+        else if(consumptionary_button_products[i].text == "Quit Game")
+        {
+            Debug.Log("Der Joel wurde zu tode gedrückt");
+            Application.Quit();
+        }
     }
     void ChangeColoursUhImBriish()
     {
@@ -59,6 +64,11 @@ public class sector : MonoBehaviour
                 consumptionary_button_products[i].color = normalCocklor;
             }
         }
+    }
+    public void SetIndex(int i)
+    {
+        andNowWereOoon = i;
+        ChangeColoursUhImBriish();
     }
 
 }

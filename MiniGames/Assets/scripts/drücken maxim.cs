@@ -8,7 +8,7 @@ public class drückenmaxim : MonoBehaviour, IPointerEnterHandler, IPointerClickH
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-
+        sector.SetIndex(zweihunderteinundsiebzichtausend);
     }
     public void OnPointerClick(PointerEventData eventData)
     {
