@@ -7,15 +7,15 @@ public class TrumpControl : MonoBehaviour
 
     void Start()
     {
-        
         rb = GetComponent<Rigidbody2D>();
     }
 
     void FixedUpdate() 
     {
         float input = Input.GetAxisRaw("Horizontal");
-        
-        
+
+        float y = rb.position.y;
+
         rb.linearVelocity = new Vector2(0, input * speed * -1);
     }
 }
