@@ -18,10 +18,7 @@ public class childtickler : MonoBehaviour
 
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
-        
-        // Launch the ball in a random diagonal direction
-        Launch();
+        StartCoroutine(KickTheball());
     }
 
     void Launch()
@@ -46,5 +43,13 @@ public class childtickler : MonoBehaviour
         yield return new WaitForSeconds(3f);
         SceneManager.LoadScene("Der grose fiddler");
 
+    }
+    private IEnumerator KickTheball()
+    {
+        yield return new WaitForSeconds(1f);
+        rb = GetComponent<Rigidbody2D>();
+        
+        // Launch the ball in a random diagonal direction
+        Launch();
     }
 }

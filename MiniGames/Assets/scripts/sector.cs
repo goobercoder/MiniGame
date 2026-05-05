@@ -1,6 +1,7 @@
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class sector : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class sector : MonoBehaviour
     public Color erectCocklor = Color.purple;
     public TMP_Text[] consumptionary_button_products;
     private int andNowWereOoon = 0;
+    public imageshadethingcontroller lowtaperfadeeeee;
     
     void Start()
     {
@@ -39,11 +41,11 @@ public class sector : MonoBehaviour
 
         if(consumptionary_button_products[i].text == "Start Shitty minigames")
         {
-            SceneManager.LoadScene("Der grose fiddler");
+            StartCoroutine(ChangeScene("Der grose fiddler"));
         }
         else if(consumptionary_button_products[i].text == "Settings")
         {
-            SceneManager.LoadScene("Der grose insel");
+            StartCoroutine(ChangeScene("Der grose insel"));
         }
         else if(consumptionary_button_products[i].text == "Quit Game")
         {
@@ -69,6 +71,14 @@ public class sector : MonoBehaviour
     {
         andNowWereOoon = i;
         ChangeColoursUhImBriish();
+    }
+    private IEnumerator ChangeScene(string sceneName)
+    {
+        lowtaperfadeeeee.LowTaperFadeIn();
+
+        yield return new WaitForSeconds(lowtaperfadeeeee.fadetime);
+
+        SceneManager.LoadScene(sceneName);
     }
 
 }
